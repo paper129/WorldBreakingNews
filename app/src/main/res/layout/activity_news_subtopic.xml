@@ -7,7 +7,7 @@
     android:tileMode="repeat"
     android:background="@drawable/bg_pattern"
     android:orientation="vertical"
-    tools:context="com.example.angus.ea_project.news_subtopic">
+    tools:context="leslie.worldbreakingnews.news_subtopic">
 
     <ListView
         android:id="@+id/lv"

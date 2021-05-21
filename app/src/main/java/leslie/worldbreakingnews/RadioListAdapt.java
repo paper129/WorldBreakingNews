@@ -26,8 +26,8 @@ public class RadioListAdapt extends ArrayAdapter<List_Item> {
     private Context context;
     private int resource;
     private String tx_size,tx_style;
-    private String image[]={"http://mqtt.racinglog.pw/EA/rthk_01.png", "http://mqtt.racinglog.pw/EA/rthk_02.png", "http://mqtt.racinglog.pw/EA/rthk_03.png", "http://mqtt.racinglog.pw/EA/rthk_04.png", "http://mqtt.racinglog.pw/EA/rthk_05.png"};
-
+    private String image[]={"http://107.174.218.110/rthk_01.png", "http://107.174.218.110/rthk_02.png",
+            "http://107.174.218.110/rthk_03.png", "http://107.174.218.110/rthk_04.png", "http://107.174.218.110/rthk_05.png"};
 
     public RadioListAdapt(@NonNull Context context, @LayoutRes int resource, @NonNull ArrayList<List_Item> Item, String tx_size, String tx_style) {
         super(context, resource, Item);

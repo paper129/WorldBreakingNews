@@ -7,7 +7,7 @@
     android:background="@drawable/bg_pattern"
     android:tileMode="repeat"
     android:orientation="vertical"
-    tools:context="com.example.angus.ea_project.news_detail">
+    tools:context="leslie.worldbreakingnews.news_detail">
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"

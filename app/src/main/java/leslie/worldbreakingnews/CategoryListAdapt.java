@@ -29,8 +29,12 @@ public class CategoryListAdapt extends ArrayAdapter<List_Item> {
     private int resource;
     private String tx_size , tx_style;
     private int page;
-    String image1[] ={"http://mqtt.racinglog.pw/EA/logo_mingpao.png", "http://mqtt.racinglog.pw/EA/logo_oncc.png", "http://mqtt.racinglog.pw/EA/logo_yahoo.png", "http://mqtt.racinglog.pw/EA/logo_ettoday.png", "http://mqtt.racinglog.pw/EA/logo_hk01.png", "http://mqtt.racinglog.pw/EA/logo_headline.png", "http://mqtt.racinglog.pw/EA/logo_rthk.png", "http://mqtt.racinglog.pw/EA/logo_thinkhk.png", "http://mqtt.racinglog.pw/EA/logo_ltn.png"};
-    String image2[] ={"http://mqtt.racinglog.pw/EA/logo_all.png","http://mqtt.racinglog.pw/EA/logo_business.png","http://mqtt.racinglog.pw/EA/logo_entertainment.png","http://mqtt.racinglog.pw/EA/logo_health.png","http://mqtt.racinglog.pw/EA/logo_science.png","http://mqtt.racinglog.pw/EA/logo_sports.png","http://mqtt.racinglog.pw/EA/logo_technology.png"};
+    String image1[] ={"http://107.174.218.110/logo_mingpao.png", "http://107.174.218.110/gnews.jpg", "http://107.174.218.110/logo_yahoo.png",
+            "http://107.174.218.110/logo_ettoday.png", "http://107.174.218.110/logo_hk01.png", "http://107.174.218.110/sv.png",
+            "http://107.174.218.110/logo_rthk.png", "http://107.174.218.110/logo_thinkhk.png", "http://107.174.218.110/logo_ltn.png"};
+    String image2[] ={"http://107.174.218.110/logo_all.png","http://107.174.218.110/logo_business.png",
+            "http://107.174.218.110/logo_entertainment.png","http://107.174.218.110/logo_health.png","http://107.174.218.110/logo_science.png",
+            "http://107.174.218.110/logo_sports.png","http://107.174.218.110/logo_technology.png"};
     public CategoryListAdapt(@NonNull Context context, @LayoutRes int resource, @NonNull ArrayList<List_Item> Item, String tx_size,String tx_style,int page) {
         super(context, resource, Item);
         this.Item = Item;

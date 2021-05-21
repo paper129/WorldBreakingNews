@@ -101,7 +101,6 @@ public class menu_LoginFragment extends Fragment {
     private void checkEmailVerifcation() {
         FirebaseUser firebaseUser = firebaseAuth.getInstance().getCurrentUser();
         boolean emailflag = firebaseUser.isEmailVerified();
-        emailflag = true;
         if(emailflag){
             Toast.makeText(getActivity(), "Login Successful", Toast.LENGTH_SHORT).show();
             progressDialog.dismiss();

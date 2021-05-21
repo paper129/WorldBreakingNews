@@ -48,7 +48,7 @@ public class Add_Following_Activity extends AppCompatActivity {
         getSupportActionBar().setTitle("Add Topic");
         //setup database
         firebaseAuth = FirebaseAuth.getInstance();
-        firebaseDatabase = FirebaseDatabase.getInstance();
+        firebaseDatabase = FirebaseDatabase.getInstance("https://cem-android-3c4e5-default-rtdb.asia-southeast1.firebasedatabase.app");
         tx1 = (TextView) findViewById(R.id.tx1);
         Typeface custom_font = Typeface.createFromAsset(getAssets(), "fonts/OldNewspaperTypes.ttf");
         tx1.setTypeface(custom_font);
@@ -85,7 +85,7 @@ public class Add_Following_Activity extends AppCompatActivity {
         });
     }
     private void sendUserData(){
-        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance("https://cem-android-3c4e5-default-rtdb.asia-southeast1.firebasedatabase.app/");
         DatabaseReference myRef = firebaseDatabase.getReference(firebaseAuth.getUid());
         UserData userData = new UserData(following_data);
         myRef.setValue(userData);

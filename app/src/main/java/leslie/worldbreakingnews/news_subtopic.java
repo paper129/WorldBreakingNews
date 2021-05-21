@@ -13,6 +13,7 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -25,8 +26,10 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 /**
  * Created by Leslie on 5/21/2021.
@@ -78,31 +81,31 @@ public class news_subtopic extends AppCompatActivity {
             switch (position)
             {
                 case 0:
-                    url="https://newsapi.org/v2/everything?domains=mingpao.com&sortBy=publishedAt&apiKey=307781e9e6ca4234a05abe536b55252d";
+                    url="https://newsapi.org/v2/everything?domains=mingpao.com&sortBy=publishedAt&apiKey=2666f39e7229477fb7f95e926a44d151";
                     break;
                 case 1:
-                    url="https://newsapi.org/v2/everything?domains=hk.on.cc&sortBy=publishedAt&apiKey=307781e9e6ca4234a05abe536b55252d";
+                    url="https://newsapi.org/v2/everything?q=google.com&sortBy=publishedAt&apiKey=2666f39e7229477fb7f95e926a44d151";
                     break;
                 case 2:
-                    url="https://newsapi.org/v2/everything?domains=yahoo.com&sortBy=publishedAt&apiKey=307781e9e6ca4234a05abe536b55252d";
+                    url="https://newsapi.org/v2/everything?domains=yahoo.com&sortBy=publishedAt&apiKey=2666f39e7229477fb7f95e926a44d151";
                     break;
                 case 3:
-                    url="https://newsapi.org/v2/everything?domains=ettoday.net&sortBy=publishedAt&apiKey=307781e9e6ca4234a05abe536b55252d";
+                    url="https://newsapi.org/v2/everything?domains=ettoday.net&sortBy=publishedAt&apiKey=2666f39e7229477fb7f95e926a44d151";
                     break;
                 case 4:
-                    url="https://newsapi.org/v2/everything?domains=hk01.com&sortBy=publishedAt&apiKey=307781e9e6ca4234a05abe536b55252d";
+                    url="https://newsapi.org/v2/everything?domains=hk01.com&sortBy=publishedAt&apiKey=2666f39e7229477fb7f95e926a44d151";
                     break;
                 case 5:
-                    url="https://newsapi.org/v2/everything?domains=stheadline.com&sortBy=publishedAt&apiKey=307781e9e6ca4234a05abe536b55252d";
+                    url="https://newsapi.org/v2/everything?domains=sportsv.net&sortBy=publishedAt&apiKey=2666f39e7229477fb7f95e926a44d151";
                     break;
                 case 6:
-                    url="https://newsapi.org/v2/everything?domains=rthk.hk&sortBy=publishedAt&apiKey=307781e9e6ca4234a05abe536b55252d";
+                    url="https://newsapi.org/v2/everything?domains=rthk.hk&sortBy=publishedAt&apiKey=2666f39e7229477fb7f95e926a44d151";
                     break;
                 case 7:
-                    url="https://newsapi.org/v2/everything?domains=appledaily.com&sortBy=publishedAt&apiKey=307781e9e6ca4234a05abe536b55252d";
+                    url="https://newsapi.org/v2/everything?domains=appledaily.com&sortBy=publishedAt&apiKey=2666f39e7229477fb7f95e926a44d151";
                     break;
                 case 8:
-                    url="https://newsapi.org/v2/everything?domains=ntdtv.com&sortBy=publishedAt&apiKey=307781e9e6ca4234a05abe536b55252d";
+                    url="https://newsapi.org/v2/everything?domains=ntdtv.com&sortBy=publishedAt&apiKey=2666f39e7229477fb7f95e926a44d151";
                     break;
 
             }
@@ -112,25 +115,25 @@ public class news_subtopic extends AppCompatActivity {
             switch (position)
             {
                 case 0:
-                    url = "https://newsapi.org/v2/top-headlines?country=hk&apiKey=307781e9e6ca4234a05abe536b55252d";
+                    url = "https://newsapi.org/v2/top-headlines?country=hk&apiKey=2666f39e7229477fb7f95e926a44d151";
                     break;
                 case 1:
-                    url = "https://newsapi.org/v2/top-headlines?country=hk&category=business&apiKey=307781e9e6ca4234a05abe536b55252d";
+                    url = "https://newsapi.org/v2/top-headlines?country=hk&category=business&apiKey=2666f39e7229477fb7f95e926a44d151";
                     break;
                 case 2:
-                    url = "https://newsapi.org/v2/top-headlines?country=hk&category=entertainment&apiKey=307781e9e6ca4234a05abe536b55252d";
+                    url = "https://newsapi.org/v2/top-headlines?country=hk&category=entertainment&apiKey=2666f39e7229477fb7f95e926a44d151";
                     break;
                 case 3:
-                    url = "https://newsapi.org/v2/top-headlines?country=hk&category=health&apiKey=307781e9e6ca4234a05abe536b55252d";
+                    url = "https://newsapi.org/v2/top-headlines?country=hk&category=health&apiKey=2666f39e7229477fb7f95e926a44d151";
                     break;
                 case 4:
-                    url = "https://newsapi.org/v2/top-headlines?country=hk&category=science&apiKey=307781e9e6ca4234a05abe536b55252d";
+                    url = "https://newsapi.org/v2/top-headlines?country=hk&category=science&apiKey=2666f39e7229477fb7f95e926a44d151";
                     break;
                 case 5:
-                    url = "https://newsapi.org/v2/top-headlines?country=hk&category=sports&apiKey=307781e9e6ca4234a05abe536b55252d";
+                    url = "https://newsapi.org/v2/top-headlines?country=hk&category=sports&apiKey=2666f39e7229477fb7f95e926a44d151";
                     break;
                 case 6:
-                    url = "https://newsapi.org/v2/top-headlines?country=hk&category=technology&apiKey=307781e9e6ca4234a05abe536b55252d";
+                    url = "https://newsapi.org/v2/top-headlines?country=hk&category=technology&apiKey=2666f39e7229477fb7f95e926a44d151";
                     break;
             }
         }
@@ -250,7 +253,19 @@ public class news_subtopic extends AppCompatActivity {
 
                 error.printStackTrace();
             }
-        });
+        }){
+            //Header
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                HashMap<String, String> headers = new HashMap<String, String>();
+                String uuid = UUID.randomUUID().toString().replace("-", "");
+                headers.put("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36");
+                //headers.put("newsapi", uuid);
+                //headers.put("cf-request-id", "0a27da503e0000229055b21000000001");
+                //headers.put("content-type","application/json; charset=utf-8");
+                return headers;
+            }
+        };
         pd = new ProgressDialog(this);
         pd.setMessage("Loading..");
         pd.setTitle("Getting Data");

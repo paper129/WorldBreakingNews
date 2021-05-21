@@ -28,7 +28,7 @@ public class menu_CategoryFragment extends Fragment {
     boolean swap = false;
     private ArrayList<List_Item> arrayList;
 
-    String[ ] item1 ={"MingPao", "Oncc", "Yahoo","Ettoday","HK01","Headline","RTHK","Apple Daily","LTN"};
+    String[ ] item1 ={"MingPao", "Google News", "Yahoo","Ettoday","HK01","SportsSV","RTHK","Apple Daily","LTN"};
     String[ ] item2 ={"All","Business","Entertainment","Health","Science","Sports","Technology"};
 
     public menu_CategoryFragment() {
