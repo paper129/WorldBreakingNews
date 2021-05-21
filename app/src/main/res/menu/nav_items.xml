@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item android:title="Main">
+        <menu>
+        <item
+            android:id="@+id/Hot_News"
+            android:icon="@drawable/icon_fire"
+            android:title="Hot News" />
+
+        <item
+            android:id="@+id/Category"
+            android:icon="@drawable/icon_category"
+            android:title="Category" />
+        <item
+            android:id="@+id/Following"
+            android:icon="@drawable/icon_following"
+            android:title="Following" />
+        </menu>
+        </item>
+    </group>
+    <group android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item android:title="Media">
+        <menu>
+        <item
+            android:id="@+id/News_Map"
+            android:icon="@drawable/icon_newsmap"
+            android:title="News Map" />
+        <item
+            android:id="@+id/Music"
+            android:icon="@drawable/icon_music"
+            android:title="Radio" />
+        </menu>
+        </item>
+    </group>
+
+    <group android:id="@+id/group3"
+        android:checkableBehavior="single">
+        <item android:title="Tool">
+            <menu>
+            <item
+                android:id="@+id/Setting"
+                android:icon="@drawable/icon_setting"
+                android:title="Setting" />
+            </menu>
+        </item>
+    </group>
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/Login_item"
+                android:icon="@drawable/icon_login"
+                android:title="Login" />
+        </menu>
+    </item>
+</menu>

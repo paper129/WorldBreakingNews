@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_pattern"
+    tools:context="leslie.worldbreakingnews.Add_Following_Activity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:minHeight="?attr/actionBarSize" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="70sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginBottom="30sp"
+        android:background="@drawable/rounded_layout"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tx1"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="20sp"
+            android:textSize="22sp"
+            android:text="Topic"/>
+        <CheckBox
+            android:id="@+id/chb1"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="60sp"
+            android:text="Ming Pao" />
+
+        <CheckBox
+            android:id="@+id/chb2"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="100sp"
+            android:text="Oncc" />
+
+        <CheckBox
+            android:id="@+id/chb3"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="140sp"
+            android:text="Yahoo News" />
+
+        <CheckBox
+            android:id="@+id/chb4"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="180sp"
+            android:text="Ettoday" />
+
+        <CheckBox
+            android:id="@+id/chb5"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="220sp"
+            android:text="HK01" />
+
+        <CheckBox
+            android:id="@+id/chb6"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="260sp"
+            android:text="Headline" />
+
+        <CheckBox
+            android:id="@+id/chb7"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="300sp"
+            android:text="RTHK" />
+
+        <CheckBox
+            android:id="@+id/chb8"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="340sp"
+            android:text="Apple Daily" />
+
+        <CheckBox
+            android:id="@+id/chb9"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="380sp"
+            android:text="LTN" />
+
+        <CheckBox
+            android:id="@+id/chb10"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190sp"
+            android:layout_marginTop="60sp"
+            android:text="All" />
+        <CheckBox
+            android:id="@+id/chb11"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business"
+            android:layout_marginLeft="190sp"
+            android:layout_marginTop="100sp"/>
+        <CheckBox
+            android:id="@+id/chb12"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enterainment"
+            android:layout_marginLeft="190sp"
+            android:layout_marginTop="140sp"/>
+        <CheckBox
+            android:id="@+id/chb13"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Health"
+            android:layout_marginLeft="190sp"
+            android:layout_marginTop="180sp"/>
+        <CheckBox
+            android:id="@+id/chb14"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Science"
+            android:layout_marginLeft="190sp"
+            android:layout_marginTop="220sp"/>
+        <CheckBox
+            android:id="@+id/chb15"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sports"
+            android:layout_marginLeft="190sp"
+            android:layout_marginTop="260sp"/>
+        <CheckBox
+            android:id="@+id/chb16"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Technology"
+            android:layout_marginLeft="190sp"
+            android:layout_marginTop="300sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
