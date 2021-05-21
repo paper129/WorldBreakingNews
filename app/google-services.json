@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "514455374853",
+    "project_id": "cem-android-3c4e5",
+    "storage_bucket": "cem-android-3c4e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514455374853:android:6a875af574110283e1e06c",
+        "android_client_info": {
+          "package_name": "leslie.worldbreakingnews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514455374853-ogev6pl2q5cdknvmj3vfjld0g24r34vd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW2bgVbRYaLDPVRd3gkoaluJ6X2nJxxdo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514455374853-ogev6pl2q5cdknvmj3vfjld0g24r34vd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

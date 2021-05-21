@@ -3,6 +3,8 @@ package leslie.worldbreakingnews;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
+import android.util.Patterns;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
@@ -91,6 +93,10 @@ public class RegistrationActivity extends AppCompatActivity {
         {
             Toast.makeText(this,"Please enter all the details",Toast.LENGTH_SHORT).show();
         }
+
+        if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+            Toast.makeText(this, "Email is not valid.", Toast.LENGTH_SHORT).show();
+        }
         else
         {
             result = true;
@@ -117,7 +123,7 @@ public class RegistrationActivity extends AppCompatActivity {
     }
     private void sendUserData(){
         String following_data = "0000000000000000";
-        String firebaseDB = "https://androiddev-d9912-default-rtdb.firebaseio.com/";
+        String firebaseDB = "https://cem-android-3c4e5-default-rtdb.asia-southeast1.firebasedatabase.app/";
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance(firebaseDB);
         DatabaseReference myRef = firebaseDatabase.getReference(firebaseAuth.getUid());
         UserData userData = new UserData(following_data);
