@@ -7,4 +7,4 @@
 /build
 /captures
 .externalNativeBuild
-*.json
+a/pp/google-services.json
